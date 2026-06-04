@@ -11,22 +11,22 @@ export default function MyService() {
     {
       name: "Web Development",
       icon: "⟶",
-      image: "/images/service-thumb.png",
+      image: "/images/web-dev-service.png",
     },
     {
-      name: "UI/UX Design",
+      name: "WordPress Plugin Development",
       icon: "⟶",
-      image: "/images/portfolio-2.png",
+      image: "/images/wp-plugin-service.png",
     },
     {
       name: "SEO & AI Search Optimization",
       icon: "⟶",
-      image: "/images/portfolio-3.png",
+      image: "/images/seo-ai-service.png",
     },
     {
       name: "Elementor Addons",
       icon: "⟶",
-      image: "/images/portfolio-1.png",
+      image: "/images/elementor-addons-service.png",
     },
   ];
 

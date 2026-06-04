@@ -56,64 +56,15 @@ export default function Hero() {
               priority
               className="hero-portrait-img"
             />
-            {/* QR Code on top of image */}
+            {/* Custom Shape on top of image */}
             <div className="hero-qr-wrap">
-              <svg
-                width="90"
-                height="90"
-                viewBox="0 0 90 90"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                {/* Finder patterns & modules */}
-                <rect x="4" y="4" width="24" height="24" stroke="#fff" strokeWidth="2" fill="none" />
-                <rect x="8" y="8" width="16" height="16" stroke="#fff" strokeWidth="2" fill="none" />
-                <rect x="12" y="12" width="8" height="8" fill="#fff" />
-                <rect x="62" y="4" width="24" height="24" stroke="#fff" strokeWidth="2" fill="none" />
-                <rect x="66" y="8" width="16" height="16" stroke="#fff" strokeWidth="2" fill="none" />
-                <rect x="70" y="12" width="8" height="8" fill="#fff" />
-                <rect x="4" y="62" width="24" height="24" stroke="#fff" strokeWidth="2" fill="none" />
-                <rect x="8" y="66" width="16" height="16" stroke="#fff" strokeWidth="2" fill="none" />
-                <rect x="12" y="70" width="8" height="8" fill="#fff" />
-                <rect x="34" y="10" width="5" height="5" fill="#fff" />
-                <rect x="42" y="10" width="5" height="5" fill="#fff" />
-                <rect x="50" y="10" width="5" height="5" fill="#fff" />
-                <rect x="34" y="18" width="5" height="5" fill="#fff" />
-                <rect x="50" y="18" width="5" height="5" fill="#fff" />
-                <rect x="10" y="34" width="5" height="5" fill="#fff" />
-                <rect x="18" y="34" width="5" height="5" fill="#fff" />
-                <rect x="34" y="34" width="5" height="5" fill="#fff" />
-                <rect x="42" y="34" width="5" height="5" fill="#fff" />
-                <rect x="50" y="34" width="5" height="5" fill="#fff" />
-                <rect x="62" y="34" width="5" height="5" fill="#fff" />
-                <rect x="70" y="34" width="5" height="5" fill="#fff" />
-                <rect x="78" y="34" width="5" height="5" fill="#fff" />
-                <rect x="34" y="42" width="5" height="5" fill="#fff" />
-                <rect x="50" y="42" width="5" height="5" fill="#fff" />
-                <rect x="42" y="42" width="5" height="5" fill="#fff" />
-                <rect x="10" y="50" width="5" height="5" fill="#fff" />
-                <rect x="18" y="50" width="5" height="5" fill="#fff" />
-                <rect x="34" y="50" width="5" height="5" fill="#fff" />
-                <rect x="42" y="50" width="5" height="5" fill="#fff" />
-                <rect x="50" y="50" width="5" height="5" fill="#fff" />
-                <rect x="62" y="50" width="5" height="5" fill="#fff" />
-                <rect x="78" y="50" width="5" height="5" fill="#fff" />
-                <rect x="34" y="62" width="5" height="5" fill="#fff" />
-                <rect x="42" y="62" width="5" height="5" fill="#fff" />
-                <rect x="50" y="62" width="5" height="5" fill="#fff" />
-                <rect x="62" y="62" width="5" height="5" fill="#fff" />
-                <rect x="78" y="62" width="5" height="5" fill="#fff" />
-                <rect x="34" y="70" width="5" height="5" fill="#fff" />
-                <rect x="50" y="70" width="5" height="5" fill="#fff" />
-                <rect x="62" y="70" width="5" height="5" fill="#fff" />
-                <rect x="70" y="70" width="5" height="5" fill="#fff" />
-                <rect x="78" y="70" width="5" height="5" fill="#fff" />
-                <rect x="34" y="78" width="5" height="5" fill="#fff" />
-                <rect x="42" y="78" width="5" height="5" fill="#fff" />
-                <rect x="50" y="78" width="5" height="5" fill="#fff" />
-                <rect x="62" y="78" width="5" height="5" fill="#fff" />
-                <rect x="78" y="78" width="5" height="5" fill="#fff" />
-              </svg>
+              <Image
+                src="/images/hero-shape.png"
+                alt="Custom Shape"
+                width={88}
+                height={88}
+                style={{ objectFit: "contain" }}
+              />
             </div>
           </div>
         </div>
@@ -133,9 +84,9 @@ export default function Hero() {
         <nav className="nav-overlay-links">
           <a href="#hero" onClick={toggleMenu}>Home</a>
           <a href="#about" onClick={toggleMenu}>About me</a>
+          <a href="#skills-experience" onClick={toggleMenu}>Skills &amp; Exp</a>
           <a href="#work" onClick={toggleMenu}>Portfolio</a>
           <a href="#services" onClick={toggleMenu}>My Services</a>
-          <a href="#best-work" onClick={toggleMenu}>Featured Project</a>
           <a href="#blog" onClick={toggleMenu}>Stay Updated</a>
           <a href="#feedback" onClick={toggleMenu}>Clients Feedback</a>
           <a href="#footer" className="nav-overlay-cta" onClick={toggleMenu}>HIRE ME</a>

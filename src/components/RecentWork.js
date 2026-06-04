@@ -3,19 +3,19 @@ import Image from "next/image";
 export default function RecentWork() {
   const works = [
     {
-      src: "/images/portfolio-1.png",
+      src: "/images/element-pack-recent.png",
       alt: "Element Pack Lite",
       label: "Elementor Addon Plugin",
       link: "https://wordpress.org/plugins/bdthemes-element-pack-lite/",
     },
     {
-      src: "/images/portfolio-2.png",
+      src: "/images/prime-slider-recent.png",
       alt: "Prime Slider Lite",
       label: "WordPress Slider Plugin",
       link: "https://wordpress.org/plugins/bdthemes-prime-slider-lite/",
     },
     {
-      src: "/images/portfolio-3.png",
+      src: "/images/wp-profile-recent.png",
       alt: "WordPress Plugins Profile",
       label: "WordPress.org Contributor",
       link: "https://profiles.wordpress.org/mohammaadfarid/#content-plugins",

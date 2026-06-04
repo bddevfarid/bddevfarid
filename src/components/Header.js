@@ -25,6 +25,7 @@ export default function Header() {
         <nav className="header-nav" id="main-nav">
           <a href="#work">Portfolio</a>
           <a href="#about">About</a>
+          <a href="#skills-experience">Skills</a>
           <a href="#blog">Blog</a>
           <a href="#services">Pages</a>
         </nav>

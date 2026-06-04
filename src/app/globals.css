@@ -226,7 +226,7 @@ button {
     left: 50%;
     transform: translateX(-50%);
     width: 100vw;
-    height: calc(100% - 100px);
+    height: calc(100% - 98px);
     background: #68795A;
     z-index: 0;
 }
@@ -255,7 +255,6 @@ button {
     z-index: 2;
     margin-top: -99px;
     width: 100%;
-    overflow: hidden;
 }
 
 .hero-portrait-img {
@@ -266,19 +265,17 @@ button {
     display: block;
 }
 
-/* QR Code - on top of image, right side */
 .hero-qr-wrap {
-  position: absolute;
-  top: 50%;
-  right: 30px;
-  transform: translateY(-70%);
-  z-index: 3;
+    position: absolute;
+    top: 60%;
+    right: -51px;
+    transform: translateY(-70%);
+    z-index: 7;
 }
 
-.hero-qr-wrap svg {
-  width: 88px;
-  height: 88px;
-  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.1));
+.hero-qr-wrap img {
+    height: 120px;
+    width: 120px;
 }
 
 /* ========================================
@@ -533,7 +530,6 @@ button {
   overflow: hidden;
   position: absolute;
   z-index: 50;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.18);
   transition: opacity 0.3s ease, transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), left 0.08s ease-out, top 0.08s ease-out;
   transform-origin: center center;
   pointer-events: none;
@@ -1035,8 +1031,8 @@ button {
 }
 
 .footer-phone-mockup {
-  width: 210px;
-  height: 310px;
+  width: 200px;
+  height: 200px;
   position: relative;
   overflow: hidden;
 }
@@ -1282,5 +1278,252 @@ button {
     flex-direction: column;
     gap: 15px;
     align-items: center;
+  }
+}
+
+/* ========================================
+   SKILLS & EXPERIENCE SECTION
+   ======================================== */
+.skills-exp-section {
+  padding: 95px 0;
+  background-color: var(--color-bg);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.skills-exp-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.skills-exp-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 60px;
+  margin-top: 40px;
+}
+
+.column-title {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 28px;
+  font-weight: 400;
+  color: var(--color-text);
+  margin-bottom: 15px;
+}
+
+.column-intro {
+  font-size: 14px;
+  color: var(--color-text-light);
+  line-height: 1.7;
+  margin-bottom: 30px;
+  max-width: 480px;
+}
+
+/* Skills Column Styling */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 15px;
+}
+
+.skill-card {
+  background: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 20px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  cursor: pointer;
+}
+
+.skill-card:hover {
+  transform: translateY(-4px);
+  background: var(--color-bg);
+  border-color: var(--color-primary);
+  box-shadow: 0 10px 20px rgba(92, 107, 79, 0.08);
+}
+
+.skill-card-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.skill-icon {
+  width: 24px;
+  height: 24px;
+  color: var(--color-primary);
+  transition: color 0.3s ease;
+  flex-shrink: 0;
+}
+
+.skill-card:hover .skill-icon {
+  color: var(--color-primary-light);
+}
+
+.skill-meta {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.skill-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.skill-level {
+  font-size: 10px;
+  text-transform: uppercase;
+  color: var(--color-text-light);
+  letter-spacing: 0.5px;
+  margin-top: 2px;
+}
+
+.skill-progress-wrap {
+  width: 100%;
+  height: 4px;
+  background: rgba(0, 0, 0, 0.06);
+  border-radius: 2px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.skill-progress-bar {
+  height: 100%;
+  background: var(--color-primary);
+  border-radius: 2px;
+  transition: width 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.skill-card:hover .skill-progress-bar {
+  background: var(--color-primary-light);
+}
+
+.skill-percentage {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  align-self: flex-end;
+}
+
+/* Experience Timeline Styling */
+.experience-column {
+  position: relative;
+}
+
+.experience-timeline {
+  position: relative;
+  padding-left: 24px;
+  margin-top: 30px;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 3px;
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  background: var(--color-border);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 35px;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-dot-container {
+  position: absolute;
+  left: -24px;
+  top: 4px;
+  width: 8px;
+  height: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-border-dark);
+  border: 2px solid var(--color-bg);
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+.timeline-item:hover .timeline-dot {
+  background: var(--color-primary);
+  transform: scale(1.4);
+  box-shadow: 0 0 0 4px rgba(92, 107, 79, 0.2);
+}
+
+.timeline-content {
+  transition: transform 0.3s ease;
+}
+
+.timeline-item:hover .timeline-content {
+  transform: translateX(4px);
+}
+
+.timeline-header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.timeline-duration {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-primary-light);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.timeline-company {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--color-text);
+  margin-bottom: 2px;
+}
+
+.timeline-role {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-text-light);
+}
+
+.timeline-desc {
+  font-size: 13.5px;
+  line-height: 1.7;
+  color: var(--color-text-light);
+  max-width: 520px;
+}
+
+/* Responsiveness for Skills & Experience */
+@media (max-width: 992px) {
+  .skills-exp-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  .skills-column, .experience-column {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }

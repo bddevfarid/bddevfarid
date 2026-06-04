@@ -59,10 +59,10 @@ export default function Footer() {
               <span className="footer-year-label">©2026</span>
               <div className="footer-phone-mockup">
                 <Image
-                  src="/images/phone-mockup.png"
-                  alt="Portfolio App"
+                  src="/images/footer-shape.jpg"
+                  alt="Asterisk Star Shape"
                   fill
-                  style={{ objectFit: "contain" }}
+                  style={{ objectFit: "cover" }}
                   sizes="(max-width: 768px) 150px, 210px"
                   priority
                 />
