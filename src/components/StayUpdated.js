@@ -5,16 +5,16 @@ export default function StayUpdated() {
     {
       src: "/images/blog-1.png",
       alt: "Creative Vision 2024",
-      date: "Dec 15, 2024",
+      date: "Jan 15, 2026",
       category: "Design",
       title: "How to Build a Stunning Portfolio Website",
     },
     {
       src: "/images/blog-2.png",
       alt: "Portfolio Showcase",
-      date: "Nov 28, 2024",
+      date: "Nov 28, 2025",
       category: "Development",
-      title: "Top 10 Web Design Trends for 2024",
+      title: "Top 10 Web Design Trends for 2026",
     },
   ];
 
