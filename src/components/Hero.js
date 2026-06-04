@@ -33,8 +33,8 @@ export default function Hero() {
             <span>Developer</span>
           </div>
           <div className="hero-label-group">
-            <span>Product</span>
-            <span>Manager</span>
+            <span>Software</span>
+            <span>Engineer</span>
           </div>
           <div className="hero-label-single">
             <span>Since 2015</span>
