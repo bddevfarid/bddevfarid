@@ -1527,3 +1527,141 @@ button {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+/* ========================================
+   RESPONSIVE IMPROVEMENTS & FIXES
+   ======================================== */
+
+/* Header Mobile View */
+@media (max-width: 768px) {
+  .header-nav {
+    display: none;
+  }
+  .hire-me-btn {
+    padding: 8px 16px;
+    font-size: 11px;
+  }
+}
+
+/* Hero Section Mobile & Tablet */
+@media (max-width: 992px) {
+  .hero-portrait-img {
+    height: 600px;
+  }
+  .hero-qr-wrap {
+    right: -25px;
+    top: 65%;
+  }
+  .hero-qr-wrap img {
+    height: 100px !important;
+    width: 100px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-portrait-img {
+    height: 400px;
+  }
+  .hero-name {
+    font-size: 70px;
+    letter-spacing: -3px;
+    margin-left: 0;
+  }
+  .hero-labels {
+    flex-direction: column;
+    gap: 15px;
+    padding-bottom: 15px;
+  }
+  .hero-qr-wrap {
+    right: -10px;
+    top: 70%;
+  }
+  .hero-qr-wrap img {
+    height: 70px !important;
+    width: 70px !important;
+  }
+  .hero-image-block {
+    margin-top: -30px;
+  }
+}
+
+/* About Section Mobile & Tablet */
+@media (max-width: 768px) {
+  .about-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .about-stats {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .stat-item {
+    padding: 0 20px 0 0;
+    text-align: left;
+  }
+  .stat-divider {
+    display: none;
+  }
+}
+
+/* Recent Work Mobile & Tablet */
+@media (max-width: 992px) {
+  .work-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .work-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
+
+/* My Service Mobile & Tablet */
+@media (max-width: 600px) {
+  .service-item-name {
+    font-size: 16px;
+  }
+  .service-item {
+    padding: 20px 0;
+  }
+}
+
+/* Stay Updated (Blog) Mobile & Tablet */
+@media (max-width: 768px) {
+  .updated-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .updated-card-image {
+    height: 220px;
+  }
+}
+
+/* Clients Feedback Mobile & Tablet */
+@media (max-width: 768px) {
+  .feedback-card {
+    min-width: 100%;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+  }
+  .feedback-card-image {
+    width: 140px;
+    height: 160px;
+  }
+  .feedback-card-text {
+    max-width: 100%;
+  }
+  .feedback-card-content {
+    align-items: center;
+  }
+  .feedback-track {
+    gap: 20px;
+  }
+}
